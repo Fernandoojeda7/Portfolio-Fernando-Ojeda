@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('../image/pexels-wendy-wei-1555900.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+html {
+    scroll-behavior: smooth;
+}
+header{
+    font-family: 'Montserrat', sans-serif; 
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+.nav {
+    background: rgba(0, 0, 0, 0.772);
+    padding: 2% 0; 
+}
+.a_contiene_logo{
+    display: contents;
+}
+.a_menu_header {
+    padding: 0 0 0 1%;
+    color: #cf38dc;
+    text-decoration: none; 
+}
+.a_menu_header:hover {
+    color: #e9e0e0;
+    text-decoration: none; 
+}
+.hamburguesa {
+    background-color: rgb(161, 127, 255);
+}
+.logo_header {
+    width: 8%;
+    padding: 0 2% 0 0;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+.logo_header:hover {
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(360deg);
+    transform-style: preserve-3d;
+}
+.contenedor_download {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.titulos {
+    max-width: 30%;
+    max-height: 30%;
+    padding: 0 2% 0 0;
+}
+.h1_index{
+    padding: 10% 3% 8% 4%;
+    max-width: 40%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 320%;
+    font-weight: 900;
+}
+.h1_index a{
+    text-decoration: none;
+    color: white;
+}
+.h2_index {
+    margin:  4% 0;
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 300%;
+}
+.parrafo_pres {
+    text-align: justify;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    justify-items: center;
+    max-width: 50%;
+    font-size: 130%;
+    
+}
+.quien_soy{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.quien_soy img{
+    width: 30%;
+}
+@-webkit-keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+}
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+ }
+.slider {
+
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    height: 130px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+.slider::before, .slider::after {
+
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+.slider::before {
+    left: 0;
+    top: 0;
+  }
+.slider .slide-track {
+    -webkit-animation: scroll 40s linear infinite;
+            animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+  }
+.slider .slide {
+    height: 100px;
+    width: 250px;
+}
+#skiles {
+    padding: 0 0 4% 0;
+}
+.proyecto {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.imagen_proyecto{
+    box-shadow: 0 10px 20px rgb(231, 224, 224);
+    border: solid 1px rgb(57, 85, 98);
+    width: 30%;
+    margin: 0 2% 1% 0;
+}
+.parrafo_proyecto {
+        font-family: 'Abril Fatface';
+        font-family: 'Playfair Display', serif;
+        color: white;
+        font-weight: 500;
+        max-width: 30%;
+        font-size: 120%;
+        text-align: justify;
+    }
+footer{
+    background: black;
+}
+.h3_footer{
+    padding: 2%;
+    text-align: center;
+    color: white;
+}
