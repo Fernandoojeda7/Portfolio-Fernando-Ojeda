@@ -36,13 +36,13 @@ header{
     text-decoration: none; 
 }
 .hamburguesa {
-    background-color: rgb(161, 127, 255);
+    color: #cf38dc;
 }
 .logo_header {
     width: 6%;
     height: 40%;
     border-radius: 70%;
-    margin: 0 2% 0 0;
+    
     -webkit-transition: all 1s ease-out;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
@@ -58,17 +58,10 @@ header{
     justify-content: space-evenly;
     align-items: center;
 }
-.titulos {
-    max-width: 30%;
-    max-height: 30%;
-    padding: 0 2% 0 0;
-}
 .h1_index{
     padding: 10% 3% 8% 4%;
-    max-width: 40%;
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-size: 320%;
     font-weight: 900;
 }
 .h1_index a{
@@ -77,17 +70,17 @@ header{
 }
 .h2_index {
     margin:  4% 0;
+    font-weight: 600;
     text-align: center;
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-size: 300%;
 }
 .parrafo_pres {
     text-align: justify;
     color: white;
     font-family: 'Montserrat', sans-serif;
     justify-items: center;
-    max-width: 50%;
+  
     font-size: 130%;
     
 }
@@ -143,7 +136,7 @@ header{
   }
 .slider .slide-track {
     -webkit-animation: scroll 40s linear infinite;
-            animation: scroll 40s linear infinite;
+    animation: scroll 40s linear infinite;
     display: flex;
     width: calc(250px * 14);
   }
@@ -170,8 +163,6 @@ header{
         font-family: 'Playfair Display', serif;
         color: white;
         font-weight: 500;
-        max-width: 30%;
-        font-size: 120%;
         text-align: justify;
     }
 footer{
@@ -196,9 +187,7 @@ footer{
     width: 100%;
 }
 .icono_footer{
-    width: 3%;
     border-radius: 45%;
-    margin: 0 1% 3% 1%;
 }
 
 .contacto {
@@ -228,3 +217,48 @@ footer{
     animation-name: flash;
     animation-iteration-count: infinite;
    }
+@media all and (max-width: 600px) {
+    .logo_header{margin: 0 3% 1% 0; width: 10%;}
+    .hamburguesa{font-size: 125%;}
+    .contenedor_download{flex-direction: column;}
+    .h1_index {margin: 4% 0; max-width: 90%; font-size: 180%;}
+    .titulos {width: 70%; margin: 0 0 6% 0;}
+    .h2_index{font-size: 180%;}
+    .quien_soy{flex-direction: column;}
+    .quien_soy img{ width: 70%; margin: 0 0 1% 0;}
+    .parrafo_pres{max-width: 70%;}
+    .proyecto{flex-direction: column;}
+    .imagen_proyecto{width: 75%;}
+    .parrafo_proyecto{max-width: 73%; font-size: 135%;}
+    .icono_footer{width: 6%;  margin: 0 1% 4% 1%;}
+}
+@media all and (min-width: 601px) {
+    .logo_header{margin: 0 3% 1% 0; width: 8%;}
+    .hamburguesa{font-size: 145%;}
+    .contenedor_download{flex-direction: column;}
+    .h1_index {margin: 4% 0; max-width: 90%; font-size: 220%;}
+    .titulos {width: 70%; margin: 0 0 6% 0;}
+    .h2_index{font-size: 180%;}
+    .quien_soy{flex-direction: column;}
+    .quien_soy img{ width: 70%; margin: 0 0 1% 0;}
+    .parrafo_pres{max-width: 70%;}
+    .proyecto{flex-direction: column;}
+    .imagen_proyecto{width: 75%;}
+    .parrafo_proyecto{max-width: 73%; font-size: 135%;}
+    .icono_footer{width: 4%;  margin: 0 1% 4% 1%;}
+   
+}
+@media all and (min-width: 900px) {
+    .logo_header{margin: 0 3% 0 0; width: 6%;}
+    .contenedor_download{flex-direction: row;}
+    .h1_index {margin: 4% 0; max-width: 70%; font-size: 273%;}
+    .titulos {max-width: 30%; margin: 0 2% 0 0;}
+    .h2_index{font-size: 220%;}
+    .quien_soy{flex-direction: row;}
+    .quien_soy img{ width: 30%; margin: 0 0 1% 0;}
+    .parrafo_pres{max-width: 40%; font-size: 140%;}
+    .proyecto{flex-direction: row; justify-content: space-around;}
+    .imagen_proyecto{width: 30%;}
+    .parrafo_proyecto{max-width: 30%; font-size: 135%;}
+    .icono_footer{width: 3%;  margin: 0 1% 3% 1%;}
+}
