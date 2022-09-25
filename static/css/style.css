@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url('../image/pexels-wendy-wei-1555900.jpg');
+    background-image: url('../image/fondo2.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,8 +16,7 @@ html {
 header{
     font-family: 'Montserrat', sans-serif; 
     position: sticky;
-    top: 0%;
-    z-index: 1;
+   
 }
 .nav {
     background: rgba(0, 0, 0, 0.772);
@@ -90,6 +89,7 @@ header{
     align-items: center;
 }
 .quien_soy img{
+    border-radius: 2%;
     width: 30%;
 }
 @-webkit-keyframes scroll {
@@ -153,6 +153,7 @@ header{
     align-items: center;
 }
 .imagen_proyecto{
+    border-radius: 3%;
     box-shadow: 0 10px 20px rgb(231, 224, 224);
     border: solid 1px rgb(57, 85, 98);
     width: 30%;
@@ -230,7 +231,7 @@ footer{
     .proyecto{flex-direction: column;}
     .imagen_proyecto{width: 75%;}
     .parrafo_proyecto{max-width: 73%; font-size: 135%;}
-    .icono_footer{width: 6%;  margin: 0 1% 4% 1%;}
+    .icono_footer{width: 7%;  margin: 0 1% 4% 1%;}
 }
 @media all and (min-width: 601px) {
     .logo_header{margin: 0 3% 1% 0; width: 8%;}
