@@ -154,10 +154,15 @@ header{
 }
 .imagen_proyecto{
     border-radius: 3%;
-    box-shadow: 0 10px 20px rgb(231, 224, 224);
+    box-shadow:0 10px 20px rgb(231, 224, 224);
     border: solid 1px rgb(57, 85, 98);
     width: 30%;
     margin: 0 2% 1% 0;
+}
+.imagen_proyecto:hover{
+    transform: scale(1.5);
+    transition:all 0.9s ease-in-out;
+    z-index: 3;
 }
 .parrafo_proyecto {
         font-family: 'Abril Fatface';
