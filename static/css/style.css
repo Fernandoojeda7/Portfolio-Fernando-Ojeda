@@ -226,7 +226,64 @@ footer{
     animation-name: flash;
     animation-iteration-count: infinite;
    }
+.go-top-container{
+    position: fixed;
+    bottom: 4rem;
+    right: 1rem;
+    width: 4rem;
+    height: 11rem;
+    z-index: 1; 
+}
+/* .go-top-button{
+    width: 0rem;
+    height: 0rem;
+    background: #cf38dc;
+    border-radius: 50%;
+    cursor: pointer;
+   
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+} */
+.go-top-button i{
+    position: absolute;
+    font-size: 230%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: #cf38dc;
+    transition: 1s;
+}
+.show{
+    z-index: 10;
+}
+.show .go-top-button{
+    animation: popup .3s ease-in-out;
+    width: 6.6rem;
+    height: 6.6rem;
+    z-index: 11;
+}
+.show i{
+    transform: translate(-50%, -50%) scale(1);
+}
+@keyframes popup {
+    0%{
+        width: 0rem;
+        height: 0rem;
+    }
+    50%{
+        width: 8rem;
+        height: 8rem;
+    }
+    100%{
+        width: 6.6rem;
+        height: 6.6rem;
+    }
+}
 @media all and (max-width: 600px) {
+    .go-top-container{right: 0.1rem;}
+    .go-top-button i{font-size: 190%;}
     .logo_header{margin: 0 3% 1% 0; width: 10%;}
     .banderas{max-width: 8%; padding: 1.5% 0;}
     .a_menu_header{padding: 0.7% 0;}
@@ -262,6 +319,7 @@ footer{
    
 }
 @media all and (min-width: 900px) {
+    .go-top-button i{font-size: 240%;}
     .logo_header{margin: 0 3% 0 0; width: 6%;}
     .navbar-expand-lg .navbar-nav {flex-direction: row; align-items: center;}
     .banderas{max-width: 3%; margin: 0 0.7%;}
