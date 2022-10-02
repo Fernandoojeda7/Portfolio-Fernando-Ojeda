@@ -26,7 +26,7 @@ header{
     display: contents;
 }
 .a_menu_header {
-    padding: 0 0 0 1%;
+    padding: 0 1% 0 2%;
     color: #cf38dc;
     text-decoration: none; 
 }
@@ -51,6 +51,9 @@ header{
     -webkit-transform-style: preserve-3d;
     transform: rotateY(360deg);
     transform-style: preserve-3d;
+}
+.a_banderas{
+    display: contents
 }
 .contenedor_download {
     display: flex;
@@ -225,6 +228,8 @@ footer{
    }
 @media all and (max-width: 600px) {
     .logo_header{margin: 0 3% 1% 0; width: 10%;}
+    .banderas{max-width: 8%; padding: 1.5% 0;}
+    .a_menu_header{padding: 0.7% 0;}
     .hamburguesa{font-size: 125%;}
     .contenedor_download{flex-direction: column;}
     .h1_index {margin: 4% 0; max-width: 90%; font-size: 180%;}
@@ -240,6 +245,8 @@ footer{
 }
 @media all and (min-width: 601px) {
     .logo_header{margin: 0 3% 1% 0; width: 8%;}
+    .banderas{max-width: 5%; padding: 1.5% 0;}
+    .a_menu_header{padding: 0.7% 0;}
     .hamburguesa{font-size: 145%;}
     .contenedor_download{flex-direction: column;}
     .h1_index {margin: 4% 0; max-width: 90%; font-size: 220%;}
@@ -256,13 +263,16 @@ footer{
 }
 @media all and (min-width: 900px) {
     .logo_header{margin: 0 3% 0 0; width: 6%;}
+    .navbar-expand-lg .navbar-nav {flex-direction: row; align-items: center;}
+    .banderas{max-width: 3%; margin: 0 0.7%;}
     .contenedor_download{flex-direction: row;}
     .h1_index {margin: 4% 0; max-width: 70%; font-size: 273%;}
     .titulos {max-width: 30%; margin: 0 2% 0 0;}
     .h2_index{font-size: 220%;}
-    .quien_soy{flex-direction: row;}
+    .quien_soy{flex-direction: row; padding: 0 0 4% 0;}
     .quien_soy img{ width: 30%; margin: 0 0 1% 0;}
     .parrafo_pres{max-width: 40%; font-size: 140%;}
+    #skiles{padding: 0 0 4% 0;}
     .proyecto{flex-direction: row; justify-content: space-around;}
     .imagen_proyecto{width: 30%;}
     .parrafo_proyecto{max-width: 30%; font-size: 135%;}
